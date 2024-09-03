@@ -37,13 +37,13 @@ const buscarLivroPorTitulo = require("./livros/buscarLivroPorTitulo");
 app.get("/livros/buscar/titulo", buscarLivroPorTitulo);
 
 const buscarAlugueisPorIdEstudante = require("./aluguel/buscarAluguelPorIdDoEstudante");
-app.get("/alugueis/estudante/:idEstudante", buscarAlugueisPorIdEstudante);
+app.get("/aluguel/estudante/:idEstudante", buscarAlugueisPorIdEstudante);
 
-const buscarAlugueisPorIdLivro = require("./aluguel/buscarAluguelPorIdDoLivro");
-app.get("/alugueis/livro/:idLivro", buscarAlugueisPorIdLivro);
+const buscarAluguelPorIdLivro = require("./aluguel/buscarAluguelPorIdDoLivro");
+app.get("/aluguel/livro/:idLivro", buscarAluguelPorIdLivro);
 
-const buscarAlugueisPorData = require("./aluguel/buscarAluguelPorData");
-app.get("/alugueis/data", buscarAlugueisPorData);
+const buscarAluguelPorData = require("./aluguel/buscarAluguelPorData");
+app.get("/aluguel/data", buscarAluguelPorData);
 
 const cadastrarEstudantes = require("./estudantes/cadastrarEstudantes");
 const listarEstudantes = require("./estudantes/listarEstudantes");

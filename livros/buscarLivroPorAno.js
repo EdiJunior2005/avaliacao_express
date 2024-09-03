@@ -3,7 +3,7 @@ const { livros } = require('../data');
 const buscarLivroPorAno = (req, res) => {
     const { data } = req.query;
 
-    const resultados = livros.filter(livro => livro.ano.toLowerCase().includes(data.toLowerCase())
+    const resultados = livros.filter(livro => livro.ano == data
     );
 
     if (resultados.length === 0) {
